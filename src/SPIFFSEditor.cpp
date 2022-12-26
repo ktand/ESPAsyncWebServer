@@ -463,7 +463,7 @@ void SPIFFSEditor::handleRequest(AsyncWebServerRequest *request){
         output += "{\"type\":\"";
         output += "file";
         output += "\",\"name\":\"";
-        output += String(entry.name());
+        output += String(entry.path());
         output += "\",\"size\":";
         output += String(entry.size());
         output += "}";
